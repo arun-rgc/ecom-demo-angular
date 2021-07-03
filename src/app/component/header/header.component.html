@@ -1,0 +1,206 @@
+<!-- header menu -->
+<div class="container-fluid d-flex flex-wrap px-3 py-1 w-100 header align-items-center justify-content-between bg-white" id="top">
+    <div class="header__left-control order-1 order-xl-1 d-flex mb-xl-0 mb-3">
+        <button class="openbtn d-md-none" (click)="openNav()">☰</button> 
+        <div class="header__logo"><img src="../../../assets/assets/RGC LOGO.svg" alt=""></div>
+        <div class="col d-none d-md-flex header__location align-items-center">
+            <img src="../../../assets/assets/gmap.svg" alt="">
+            <div class="col d-flex flex-wrap align-items-center h-fit-content ms-2 multiline-detail">
+                <label class="fz-10 mb-0" for="">Delivery Location</label>
+                <label class="fz-13 mb-0" for="">Albert Lignsten</label>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl col-12 order-3 order-xl-2 d-flex">
+        <div class="dropdown ">
+            <button class="fz-13 btn btn-light dropdown-toggle category-button" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              All <span class="d-none d-sm-inline">Categories</span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Fashion</a></li>
+              <li><a class="dropdown-item" href="#">Groceries</a></li>
+              <li><a class="dropdown-item" href="#">More</a></li>
+            </ul>
+        </div>
+        <div class="search-box">
+            <input class="form-control bg-light fz-13 text-truncate" type="text" placeholder="Search item...">
+            <button><i class="bi bi-search"></i></button>
+        </div>
+    </div>
+    <div class="d-flex d-md-none order-3 w-100 mt-3 fz-13">
+        <i class="bi bi-geo-alt me-3"></i>
+        <span>Deliver to Vineeth, 686212</span>
+    </div>
+    <div class="header__right-control order-2 order-xl-3 d-flex justify-content-end align-items-center mb-xl-0 mb-3">
+        <div class="col order-3 order-md-1 d-none d-md-flex">
+            <button class="btn dropdown-toggle d-flex align-items-center justify-content-start w-100" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-globe fz-15"></i>
+                <label class="ms-1 fz-10" for="">English</label>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Fashion</a></li>
+                <li><a class="dropdown-item" href="#">Groceries</a></li>
+                <li><a class="dropdown-item" href="#">More</a></li>
+            </ul>
+        </div>
+        <div class="col order-2 order-md-2 d-none d-md-flex">
+            <button class="btn dropdown-toggle d-flex align-items-center justify-content-start w-100" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="../../../assets/assets/uae flag.svg" alt="">
+                <label class="ms-1 fz-10" for="">UAE</label>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Fashion</a></li>
+                <li><a class="dropdown-item" href="#">Groceries</a></li>
+                <li><a class="dropdown-item" href="#">More</a></li>
+            </ul>
+        </div>
+        <div class="user-sec order-4 order-md-3 d-none d-md-flex align-items-center ms-2">
+            <img src="../../../assets/assets/avatar 1.png" alt="">
+            <div class="d-flex flex-wrap ms-2 multiline-detail">
+                <label class="fz-10" for="">Good morning</label>
+                <label class="fz-13" for="">Albert Ligisten</label>
+            </div>
+        </div>
+        <button class="btn dropdown-toggle order-1 order-md-4 d-flex d-md-none" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="../../../assets/assets/avatar 1.png" alt="">
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Location</a></li>
+            <li><a class="dropdown-item" href="#">Language</a></li>
+            <li><a class="dropdown-item" href="#">Logout</a></li>
+        </ul>
+        <div class="col d-flex order-2 order-md-5 align-items-center">
+            <div class="position-relative me-md-0 me-2">
+                <i class="bi bi-cart3 fz-27"></i>
+                <span class="cart-count">10</span>
+            </div>
+            <label class="ms-2 fz-13 d-none d-md-block " for="">My cart</label>
+        </div>
+    </div>
+</div>
+<!-- category menu -->
+<div class="container-fluid d-md-flex d-none p-0 py-lg-0 py-2 w-100 top-menu align-items-center justify-content-between">
+    <div class="col overflowx-hidden">
+        
+        <nav class="navbar navbar-expand-lg navbar-dark category-menu">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse collapse-menu overflow-hidden" id="navbarNav">
+                <ul class="navbar-nav col-4 col-lg-12">
+                    <li class="nav-item category-menu-item">
+                        <a class="nav-link active" aria-current="page" href="#">Offeres</a>
+                        
+                    </li>
+                    <li class="nav-item category-menu-item">
+                    <a class="nav-link" href="#">Grocery</a>
+                    </li>
+                    <li class="nav-item category-menu-item">
+                    <a class="nav-link" href="#">Food & Drinks</a>
+                    </li>
+                    <li class="nav-item category-menu-item">
+                        <a class="nav-link" href="#">Mobiles</a>
+                    </li>
+                    <li class="nav-item category-menu-item">
+                        <a class="nav-link" href="#">Electronics</a>
+                    </li>
+                    <li class="nav-item category-menu-item">
+                        <a class="nav-link" href="#">Fashion</a>
+                    </li>
+                    <li class="nav-item category-menu-item">
+                        <a class="nav-link" href="#">Kitchen</a>
+                    </li>
+                    
+                </ul>
+                <ul class="navbar-nav col-4 col-lg-12 d-flex d-lg-none">
+                    <li class="nav-item category-menu-item">
+                        <a class="nav-link active" aria-current="page" href="#">Offeres</a>
+                    </li>
+                    <li class="nav-item category-menu-item">
+                    <a class="nav-link" href="#">Grocery</a>
+                    </li>
+                    <li class="nav-item category-menu-item">
+                    <a class="nav-link" href="#">Food & Drinks</a>
+                    </li>
+                    <li class="nav-item category-menu-item">
+                        <a class="nav-link" href="#">Mobiles</a>
+                    </li>
+                    <li class="nav-item category-menu-item">
+                        <a class="nav-link" href="#">Electronics</a>
+                    </li>
+                    <li class="nav-item category-menu-item">
+                        <a class="nav-link" href="#">Fashion</a>
+                    </li>
+                    <li class="nav-item category-menu-item">
+                        <a class="nav-link" href="#">Kitchen</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+        <div id="category-menu" class="category-onhover d-flex p-4">
+            <div class="col-md-6 col-12 d-flex">
+                <div class="col-4">
+                    <nav class="nav flex-column">
+                        <label class="fw-500" for="">Categories</label>
+                        <a class="nav-link active" aria-current="page" href="#">Active</a>
+                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </nav>
+                </div>
+                <div class="col-4">
+                    <nav class="nav flex-column">
+                        <label class="fw-500" for="">Categories</label>
+                        <a class="nav-link active" aria-current="page" href="#">Active</a>
+                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </nav>
+                </div>
+                <div class="col-4">
+                    <nav class="nav flex-column">
+                        <label class="fw-500" for="">Categories</label>
+                        <a class="nav-link active" aria-current="page" href="#">Active</a>
+                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-6  d-md-flex d-none overflow-hidden h-100">
+                <div class="col me-2">
+                    <img class="w-100" src="../../../assets/assets/menu-add1.png" alt="">
+                </div>
+                <div class="col-4">
+                    <img class="w-100 h-100" src="../../../assets/assets/menu-add2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fit-width d-lg-block d-none">
+        <img src="../../../assets/assets/add-menu.png" alt="">
+    </div>
+</div>
+<!-- Ends header menu -->
+
+
+<!-- mobile menu -->
+<div id="mySidebar" class="sidebar" [ngClass]="{'w-100': sidenav == true}">
+    <a href="javascript:void(0)" class="closebtn" (click)="openNav()">×</a>
+    <a href="#">Category1</a>
+    <a href="#">Category1</a>
+    <a href="#">Category1</a>
+    <a href="#">Category1</a>
+
+    <hr>
+
+    <div class="d-flex flex-column mt-4">
+        <a href="#">Account</a>
+        <a href="#">Settings</a>
+        <a href="#">About</a>
+        <a href="#">Logout</a>
+    </div>
+</div>
+ <!-- mobile menu -->

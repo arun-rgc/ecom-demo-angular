@@ -1,0 +1,552 @@
+.card{
+    border:none !important;
+}
+.featured-shop{
+    max-width: 460px;
+    width: 100%;
+    min-width: 27%;
+    margin-top: 21px;
+}
+.product-offer{
+    background: color(primary);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    font-size: 13px;
+    color: color(white);
+    clip-path: polygon(0 0, 100% 0, 0 100%, 0% 100%);
+    .offer{
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: -5px;
+    }
+    
+}
+.wish-list{
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+    i{
+        color: color(favorite);
+    }
+}
+
+.top-menu .category-onhover{
+    display: none !important;
+    position: absolute;
+    width: 100%;
+    top: 88px;
+    z-index: 4600000000;
+    left: 0;
+    min-height: 300px;
+    background: #fff;
+    box-shadow: 0px 2px 8px #0000002e;
+    &:hover{
+        display: flex !important;
+    }
+    
+}
+
+.top-menu .category-onhover .nav-link{
+    color: #000 !important;
+    padding-left: 0px !important;
+    padding-bottom: 0 !important;
+    font-size: 13px;
+}
+
+
+
+.product-card_2{
+    border-radius: 50% !important;
+    height: 130px;
+    width: 130px;
+    text-align: center;
+    border: 1px solid color(gray-200) !important;
+    .product-name{
+        font-weight: weight(bold);
+    }
+    img{
+        width: 50%;
+    }
+}
+.product-card_3{
+    border-radius: 50% !important;
+    height: 70px;
+    width: 70px !important;
+    text-align: center;
+    background: color(gray-100);
+    @include shadow-1;
+    @include flex-center;
+}
+.product-card_4{
+    height: 70px;
+    width: 70px !important;
+    text-align: center;
+    background: color(gray-100);
+    @include shadow-1;
+    @include d-flex-wrap;
+    flex-direction: row;
+    justify-content: start;
+    p{
+        margin: 0;
+        font-size: 13px;
+        text-align: center;
+        width: 100%;
+    }
+    img{
+        width:40px
+    }
+}
+.product-card_5{
+    p{  
+        padding: 5px;
+        text-align: center;
+        background: color(gray-100);
+        margin: 0px;
+    }
+}
+
+.cart-card{
+    width: 100%;
+    height: fit-content;
+    background: color(gray-200);
+    margin-top: 20px;
+    border-radius: 4px;
+    padding: 15px;
+}
+
+.service-block{
+    margin: 0px 35px;
+    margin-bottom: 50px;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 10px;
+    @include flex-center;
+    background: color(gray-200);
+    span{
+        position: absolute;
+        top: 45px;
+        font-size: 13px;
+        font-weight: weight(medium);
+        text-align: center;
+        width: 110px;
+    }
+}
+
+.social-media-block{
+    margin: 0px 8px;
+    margin-bottom: 50px;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 10px;
+    @include flex-center; 
+    color:color(white) !important;
+}
+
+.payment-method{
+    min-height:420px;
+}
+
+.payment-accordion{
+    // @include shadow-1;
+    .accordion-item{
+        border: none;
+    }
+    .accordion-button:not(.collapsed){
+        background: color(invisible);
+        color: color(black);
+    }
+}
+
+
+.user-box{
+    width: 100%;
+    @include d-flex-wrap;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('../../assets/user-bg.png');
+    background-size: 90%;
+    background-repeat: no-repeat;
+    &__img{
+        width: 100px;
+        height: 100px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    &__name{
+        margin-bottom: 10px;
+        min-width: 100%;
+        text-align: center;
+        font-size: 18px;
+    }
+}
+.sidebar__menu{
+    .nav-link.active{
+        background: color(white);
+    }
+    .nav-link{
+        padding: 8px 15px;
+        text-decoration: none !important;
+    }
+}
+.benefit-card{
+    &__icon{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: color(gray-200);
+        margin-right: 20px;
+        @include flex-center;
+    }
+}
+
+.plan-card{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+    &__head{
+        color:color(white);
+        @include flex-center;
+        @include d-flex-wrap;
+        height: 200px;
+        position: relative;
+        background: color(primary);
+        &--offer{
+            font-weight: weight(semi-bold);
+            font-size: 25px;
+        }
+        &--actual{
+            font-size: 16px;
+        }
+        &--plan{
+            font-weight: weight(medium);
+            font-size: 13px;
+            color: color(dark);
+            position: absolute;
+            top: 10px;
+            left: 0;
+            display: block;
+            width: fit-content;
+            background: color(yellow);
+            padding: 3px 15px;
+        }
+        &--duration{
+            font-weight: weight(semi-bold);
+            @include d-flex;
+            justify-content: center;
+            align-items: flex-end;
+            position: absolute;
+            bottom: 0;
+            padding-bottom: 10px;
+            width: 100%;
+            height: 60px;
+            background-image: url('../../assets/bg-duration.svg');
+        }
+    }
+    &__price{
+        height: fit-content;
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    &__body{
+        padding: 15px;
+    } 
+}
+.credit-card-add{
+    border: 2px dashed color(gray-200);
+    border-radius: 4px;
+    height:100%;
+    @include flex-center;
+    height: 170px;
+    button{
+        width: 100%;
+        height: 100%;
+    }
+}
+.credit-card{
+    padding: 15px;
+    height: 170px;
+    font-size: 13px;
+    @include d-flex-wrap;
+    background: lighten(color(info),45%);
+    background-size: 101%;
+    background-size: 100% 90px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/creditcard-bg.png');
+    @include shadow-1;
+    border-radius: 4px;
+    &__details{
+        height: 100px;
+        @include d-flex-wrap;
+        align-items: self-start;
+        flex-direction: column;
+        width: 100%;
+        &--bankshort{
+            max-height: fit-content;
+            width: 100%;
+            text-align: end;
+            font-weight: weight(bold);
+        }
+        &--bankname{
+            margin-top: -3px;
+            max-height: fit-content;
+            font-size: 15px;
+            width: 100%;
+            font-weight: weight(medium);
+        }
+        &--username{
+            max-height: fit-content;
+            width: 100%;
+            margin-top: -3px;
+            margin-bottom: 5px;
+        }
+        &--number{
+            max-height: fit-content;
+            width: 100%;
+            font-weight: weight(medium);
+        }
+    }
+    &__type{
+        font-size: 25px;
+        text-align: end;
+        width: fit-content;
+    }
+}
+
+
+.payment-historycard{
+    font-size: 13px;
+    padding: 15px;
+    border: 1px solid color(gray-200);
+}
+
+.process-frame{
+    width: 350px;
+    height: 350px;
+    position: relative;
+    &__img{
+        position: absolute;
+        left: 50%;
+        top: 50%;transform: translate(-50%,-50%);
+        width: 250px;
+    }
+    &__outerlayer{
+        .process-step{
+            z-index: 10;
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            position: absolute;
+            @include flex-center;
+            text-align: center;
+            color: color(primary);
+            background: color(white); 
+            font-weight: weight(medium); 
+            i{
+                line-height: 0px;
+            }
+            span{
+                font-size: 10px;
+            }
+        }
+        .check-step{
+            z-index: 10;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            position: absolute;
+            @include flex-center;
+            text-align: center;
+            background-color: color(primary);
+            color:color(white);
+            border: 1px solid #fff;
+            i{
+                line-height: 0px;
+            }
+        }
+        .first-check{
+            top: 15%;
+            right: 18px;
+            transform: translateY(-50%); 
+        }
+        .first-step{
+            top: -27px;
+            left: 50%;
+            transform: translateX(-50%);    
+        }
+        .first-step.active{
+            color: color(white);
+            background: color(primary);
+        }
+        .second-step{
+            top: 50%;
+            right: -27px;
+            transform: translateY(-50%);   
+        }
+        .second-check{
+            top: 85%;
+            right: 23px;
+            transform: translateY(-50%); 
+        }
+        .third-step{
+            bottom:-27px;
+            left: 50%;
+            transform: translateX(-50%);   
+        }
+        .third-check{
+            top: 85%;
+            left: 23px;
+            transform: translateY(-50%); 
+        }
+        .fourth-step{
+            top: 50%;
+            left: -29px;
+            transform: translateY(-50%);    
+        }
+        .final-step{
+            top: 8%;
+            left: -29px;
+            .final-path{
+                content: '';
+                position: absolute;
+                bottom: -40px;
+                width: 10px;
+                height: 40px;
+                background: color(gray-200);
+            }
+            
+        }
+        width: calc(100% - 20px);
+        height: calc(100% - 20px);
+        border: 10px solid color(invisible);
+        border-radius: 50%;
+        position: relative;
+        
+        &:before{
+            clip-path: polygon(50% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 50%, 50% 50%);
+            content:'';
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: calc(100% + 20px);
+            height: calc(100% + 20px);
+            border: 10px solid color(primary);
+            border-radius: 50%;
+        }
+    }
+    &__control{
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: calc(100% + 20px);
+        height: calc(100% + 20px);
+        border: 10px solid color(gray-200);
+        border-radius: 50%;
+
+    }
+    &__inside-img{
+        position: absolute;
+        left: 50%;
+        top: 50%;transform: translate(-50%,-50%);
+        width: 150px;
+        
+    }
+}
+.final-path.active{
+    background-color: color(primary);
+}
+.final-step.active .final-path{
+    background-color: color(primary);
+}
+.final-stage.active .final-step .final-path{
+    background-color: color(primary);
+}
+.process-frame__control.level-1{
+    clip-path: polygon(100% 50%, 100% 50%, 100% 50%, 100% 100%, 0 100%, 0 50%, 50% 50%);
+}
+.process-frame__control.level-2{
+    clip-path: polygon(50% 100%, 50% 100%, 50% 100%, 50% 100%, 0 100%, 0 50%, 50% 50%);
+}
+.process-frame__control.level-3{
+    clip-path: polygon(0 50%, 0 50%, 0 50%, 0 50%, 0 50%, 0 50%, 50% 50%);
+}
+.step-circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: auto;
+    @include flex-center;
+    font-weight: weight(medium);
+}
+.faq-circle{
+    position: absolute;
+    top: 0;
+    left: -15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    @include flex-center;
+    background: color(info);
+    font-size: 22px;
+    color: color(white);
+}
+.status-circle{
+    margin: 0px 4px;
+    background: lighten(color(primary),48%);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    @include flex-center;
+    span{
+       
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        @include flex-center;
+        font-size: 20px;
+        color: color(white);
+    }
+    span.success{
+        background: color(primary);
+    }
+    span.fail{
+        background: lighten(color(primary),40%);
+    }
+}
+
+.coupons-card{
+    margin-top: 40px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: color(gray-200);
+    box-shadow: 0px 0px 10px #c3c3c3;
+    img{
+        margin-top: -50px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    span{
+        display: block;
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+}

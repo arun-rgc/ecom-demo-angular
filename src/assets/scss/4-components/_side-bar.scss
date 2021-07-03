@@ -1,0 +1,91 @@
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color: color(white);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #595959;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: color(primary);
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    color: color(dark);
+    background: #0000;
+    border: none;
+    margin-right: 15px;
+  }
+  
+  .openbtn:hover {
+    background-color: color(gray-100);
+  }
+  
+  #main {
+    padding: 16px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+
+
+  .filter-sidebar{
+    min-width: 250px;
+    background: color(gray-100);
+    padding: 15px;
+    .nav-link{
+      color: color(medium) !important;
+    }
+    a{
+      font-size: 13px;
+    }
+    .form-control{
+      width: 75px !important;
+      height: 27px;
+      font-size: 12px;
+      padding: 4px;
+    }
+  }
+
+  .user-sidebar{
+    min-width: 250px;
+    background: color(gray-100);
+    padding: 15px;
+    .nav-link{
+      color: color(medium) !important;
+    }
+    .form-control{
+      width: 75px !important;
+      height: 27px;
+      font-size: 12px;
+      padding: 4px;
+    }
+  }

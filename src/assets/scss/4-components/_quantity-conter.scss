@@ -1,0 +1,22 @@
+.quantity-conter{
+    width: 110px;
+    @include d-flex;
+    justify-content: space-between;
+    align-items: center;
+    button{
+        @include flex-center;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: color(white);
+        border: 1px solid color(gray-300);
+        font-size: 22px;
+    }
+    input{
+        width: 30px;
+        height: 30px;
+        border: 0px;
+        outline: none !important;
+        padding: 5px;
+    }
+}
