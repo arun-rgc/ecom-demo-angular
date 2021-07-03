@@ -1,0 +1,17 @@
+<div class="card p-3">
+    <h4 class="fw-bold min-fit-width col-12 mt-2 mb-3">{{dealTitle}}</h4>
+    <div class="d-flex flex-wrap row">
+        <div class="col-6 px-3" *ngFor="let deal of deals" >
+            <div *ngIf="deals.length != 0">
+                <img class="w-100" [src]="deal.src" alt="">
+                <label class="fz-11 text-truncate-2 mb-3" for="">{{deal.item}}</label>
+            </div>
+        </div>
+        <div class="col-12 px-3 " *ngFor="let add of adds">
+            <img class="w-100 mb-3" [src]="add.src" alt="" *ngIf="add.src != ''">
+        </div>
+        <div class="col-12 d-flex justify-content-end">
+            <a class="fz-13" [routerLink]="path" routerLinkActive="router-link-active" ><u>View all</u></a>
+        </div>
+    </div>
+</div>
