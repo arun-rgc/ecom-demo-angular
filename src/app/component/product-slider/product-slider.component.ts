@@ -21,15 +21,15 @@ export class ProductSliderComponent implements OnInit {
       wishList: true,
     },
     {
-      percentOff: 20,  
+      percentOff: 0,  
       productName: "Samsung 6.5 kg Fully-Automatic Top Loading Washing Machine  A65A4002VS/TL", 
       src: "../../../assets/assets/product-3.png",
       rating: "4.5",
       currentPrice: "1199.00",
       previousPrice: "4299.00",
       currency: "AED",
-      time: "19:34:30",
-      countType: "hrs",
+      time: "",
+      countType: "",
       wishList: false,
     },
   ]
