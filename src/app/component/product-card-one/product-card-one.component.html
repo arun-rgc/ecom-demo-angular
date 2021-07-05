@@ -1,1 +1,45 @@
-<p>{{productName}}</p>
+<div class="product-card_1 card p-3 w-90 mx-auto position-relative">
+    <div class="product-offer" *ngIf="percentOff > 0">
+        <label class="d-flex flex-column" for="">
+            <span class="offer me-1">{{percentOff}}%</span>
+            <span>off</span>
+        </label>
+    </div>
+    <div class="wish-list pointer">
+        <i class="bi bi-heart" *ngIf="wishList"></i>
+        <i class="bi bi-heart-fill" *ngIf="!wishList"></i>
+    </div>
+    <img class="mx-auto py-3 w-75" [src]="src" [alt]="productName">
+    
+    <div class="d-flex flex-wrap justify-content-between align-items-center">
+        <div class="d-flex align-items-center" for="">
+            <span class="rating me-2 px-2 text-white small bg-info">{{rating}}</span>
+            <div class="star-rating">
+                <i class="bi bi-star-fill small"></i>
+                <i class="bi bi-star-fill small"></i>
+                <i class="bi bi-star-fill small"></i>
+                <i class="bi bi-star-fill small"></i>
+                <i class="bi bi-star-half small"></i>
+            </div>
+            
+            <div class="rating-details"></div>
+        </div>
+        <p class="mt-0 mb-2 product-name"> 
+            {{productName}}
+        </p>
+        
+    </div>
+    <div class="d-flex  text-dark product-price">
+        <label class="fw-bold fz-18 me-2" for="">
+            {{currency}} {{currentPrice}}
+        </label>
+        <label for="">
+            <s class="text-secondary small">{{currency}} {{previousPrice}}</s>
+        </label>
+    </div>
+    <label class="fw-bold fz-14 text-danger offer-time" for="" *ngIf="time !=''">offer ends in {{time}}</label>
+    <div class="d-flex justify-content-between mt-2 pb-2">
+        <button class="btn btn-main-outline text-uppercase product-btn" (click)="addCart">Add to cart</button>
+        <button class="btn btn-main text-uppercase product-btn" (click)="buyNow">Buy now</button>
+    </div>
+</div>

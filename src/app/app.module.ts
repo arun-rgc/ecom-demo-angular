@@ -9,6 +9,8 @@ import { ProductCardOneComponent } from './component/product-card-one/product-ca
 import { BannerComponent } from './component/banner/banner.component';
 import { DealsComponent } from './component/deals/deals.component';
 import { DealCardOneComponent } from './component/deal-card-one/deal-card-one.component';
+import { PersonalStoreComponent } from './component/personal-store/personal-store.component';
+import { ProductSliderComponent } from './component/product-slider/product-slider.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { DealCardOneComponent } from './component/deal-card-one/deal-card-one.co
     BannerComponent,
     DealsComponent,
     DealCardOneComponent,
+    PersonalStoreComponent,
+    ProductSliderComponent,
   ],
   imports: [
     BrowserModule,
