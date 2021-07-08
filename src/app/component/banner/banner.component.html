@@ -2,14 +2,8 @@
 <div class="container-fluid d-flex p-0 w-100 banner">
     <div id="carouselExampleControls" class="carousel slide w-100" data-bs-ride="carousel">
         <div class="carousel-inner w-100">
-          <div class="carousel-item active">
-            <img src="../../../assets/assets/banner-1.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="../../../assets/assets/banner-1.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="../../../assets/assets/banner-1.png" class="d-block w-100" alt="...">
+          <div class="carousel-item" *ngFor="let banner of bannerList; let i = index" [ngClass]="{active: i==0}">
+            <img [src]="banner.src" class="d-block w-100" alt="banner.alt">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">

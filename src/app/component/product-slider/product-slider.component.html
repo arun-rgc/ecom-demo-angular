@@ -3,7 +3,6 @@
     <h4 class="fw-bold min-fit-width col-12 mb-4 ms-2 ms-md-0 ps-4 fz-22">{{sectionTitle}}</h4>
     <div class="col-12 multi-slider">
         <div class="uk-position-relative uk-visible-toggle uk-dark px-10px" tabindex="-1" uk-slider>
-
             <ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-2@sm uk-child-width-1-2@s uk-child-width-1-5@m">
                 <li class="pb-3 border-0 d-flex" *ngFor="let product of productList">
                     <app-product-card-one
@@ -17,13 +16,13 @@
                         [time]="product.time"
                         [countType]="product.countType"
                         [wishList]="product.wishList"
+                        (cartEvent)="addCart()"
+                        (buyEvent)="buyNow()"
                     ></app-product-card-one>
                 </li>
             </ul>
-        
             <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
             <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-        
         </div>
     </div>
 </div>

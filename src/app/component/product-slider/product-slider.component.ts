@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-product-slider',
@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./product-slider.component.scss']
 })
 export class ProductSliderComponent implements OnInit {
-  sectionTitle="Best Product";
-  productList=[
+  @Input()sectionTitle="Best Product";
+  @Input()productList=[
     {
       percentOff: 20,  
       productName: "Samsung 6.5 kg Fully-Automatic Top Loading Washing Machine  A65A4002VS/TL", 
@@ -105,6 +105,14 @@ export class ProductSliderComponent implements OnInit {
       wishList: true,
     },
   ]
+  @Output() cartEvent = new EventEmitter();
+  @Output() buyEvent = new EventEmitter();
+  addCart(){
+    this.cartEvent.emit()
+  }
+  buyNow(){
+    this.buyEvent.emit()
+  }
   constructor() { }
 
   ngOnInit(): void {

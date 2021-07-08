@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-product-card-one',
@@ -17,13 +17,15 @@ export class ProductCardOneComponent  {
   @Input () countType: string = "hrs";
   @Input () wishList: boolean = false;
 
+  @Output() cartEvent = new EventEmitter();
+  @Output() buyEvent = new EventEmitter();
+
   addCart(){
-    alert("added to cart");
+    this.cartEvent.emit()
   }
   buyNow(){
-    alert("buy now");
+    this.buyEvent.emit()
   }
   constructor() { }
-
 
 }

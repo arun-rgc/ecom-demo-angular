@@ -1,4 +1,19 @@
-<app-banner></app-banner>
-<app-deals></app-deals>
+<app-banner 
+    [bannerList]="bannerList"
+></app-banner>
+<app-deals 
+    [deals]="deals"
+></app-deals>
 <app-personal-store></app-personal-store>
-<app-product-slider></app-product-slider>
+<app-product-slider 
+    [sectionTitle]="section.sectionTitle"
+    [productList]="section.productList"
+    (cartEvent)="addCart()"
+    (buyEvent)="buyNow()"
+></app-product-slider>
+<app-product-slider 
+    [sectionTitle]="section.sectionTitle"
+    [productList]="section.productList"
+    (cartEvent)="addCart()"
+    (buyEvent)="buyNow()"
+></app-product-slider>
