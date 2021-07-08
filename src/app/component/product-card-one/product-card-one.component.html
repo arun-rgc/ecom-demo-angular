@@ -11,8 +11,8 @@
     </div>
     <img class="mx-auto py-3 w-75" [src]="src" [alt]="productName">
     
-    <div class="d-flex flex-wrap justify-content-between align-items-center">
-        <div class="d-flex align-items-center" for="">
+    <div class="d-flex flex-wrap justify-content-between align-items-center" *ngIf="productName !=''">
+        <div class="d-flex align-items-center" for="" >
             <span class="rating me-2 px-2 text-white small bg-info">{{rating}}</span>
             <div class="star-rating">
                 <i class="bi bi-star-fill small"></i>

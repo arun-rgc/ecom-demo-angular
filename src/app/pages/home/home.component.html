@@ -6,14 +6,21 @@
 ></app-deals>
 <app-personal-store></app-personal-store>
 <app-product-slider 
-    [sectionTitle]="section.sectionTitle"
-    [productList]="section.productList"
+    [sectionTitle]="similar.sectionTitle"
+    [productList]="similar.productList"
     (cartEvent)="addCart()"
     (buyEvent)="buyNow()"
 ></app-product-slider>
 <app-product-slider 
-    [sectionTitle]="section.sectionTitle"
-    [productList]="section.productList"
+    [sectionTitle]="today.sectionTitle"
+    [productList]="today.productList"
     (cartEvent)="addCart()"
     (buyEvent)="buyNow()"
 ></app-product-slider>
+<app-product-slider 
+    [sectionTitle]="best.sectionTitle"
+    [productList]="best.productList"
+    (cartEvent)="addCart()"
+    (buyEvent)="buyNow()"
+></app-product-slider>
+
