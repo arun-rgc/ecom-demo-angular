@@ -2,7 +2,7 @@
 <div class="container-fluid d-flex flex-wrap px-3 py-1 w-100 header align-items-center justify-content-between bg-white" id="top">
     <div class="header__left-control order-1 order-xl-1 d-flex mb-xl-0 mb-3">
         <button class="openbtn d-md-none" (click)="openNav()">☰</button> 
-        <div class="header__logo"><img src="../../../assets/assets/RGC LOGO.svg" alt=""></div>
+        <div class="header__logo"><img src="../../../assets/assets/RGC LOGO.svg" alt=""[routerLink]="['/']" routerLinkActive="router-link-active" ></div>
         <div class="col d-none d-md-flex header__location align-items-center">
             <img src="../../../assets/assets/gmap.svg" alt="">
             <div class="col d-flex flex-wrap align-items-center h-fit-content ms-2 multiline-detail">
@@ -69,7 +69,7 @@
             <li><a class="dropdown-item" href="#">Language</a></li>
             <li><a class="dropdown-item" href="#">Logout</a></li>
         </ul>
-        <div class="col d-flex order-2 order-md-5 align-items-center">
+        <div class="col d-flex order-2 order-md-5 align-items-center" [routerLink]="['/cart']" routerLinkActive="router-link-active" >
             <div class="position-relative me-md-0 me-2">
                 <i class="bi bi-cart3 fz-27"></i>
                 <span class="cart-count">10</span>
@@ -94,7 +94,7 @@
                         
                     </li>
                     <li class="nav-item category-menu-item">
-                    <a class="nav-link" href="#">Grocery</a>
+                    <a class="nav-link" [routerLink]="['/category']" routerLinkActive="router-link-active">Grocery</a>
                     </li>
                     <li class="nav-item category-menu-item">
                     <a class="nav-link" href="#">Food & Drinks</a>
@@ -118,7 +118,7 @@
                         <a class="nav-link active" aria-current="page" href="#">Offeres</a>
                     </li>
                     <li class="nav-item category-menu-item">
-                    <a class="nav-link" href="#">Grocery</a>
+                    <a class="nav-link" [routerLink]="['/category']" routerLinkActive="router-link-active" >Grocery</a>
                     </li>
                     <li class="nav-item category-menu-item">
                     <a class="nav-link" href="#">Food & Drinks</a>

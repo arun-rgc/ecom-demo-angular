@@ -11,6 +11,8 @@ import { DealsComponent } from './component/deals/deals.component';
 import { DealCardOneComponent } from './component/deal-card-one/deal-card-one.component';
 import { PersonalStoreComponent } from './component/personal-store/personal-store.component';
 import { ProductSliderComponent } from './component/product-slider/product-slider.component';
+import { HomeComponent } from './pages/home/home.component';
+import { CartComponent } from './pages/cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -23,10 +25,12 @@ import { ProductSliderComponent } from './component/product-slider/product-slide
     DealCardOneComponent,
     PersonalStoreComponent,
     ProductSliderComponent,
+    HomeComponent,
+    CartComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

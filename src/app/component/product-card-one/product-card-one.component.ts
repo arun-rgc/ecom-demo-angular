@@ -6,17 +6,16 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./product-card-one.component.scss']
 })
 export class ProductCardOneComponent  {
-  @Input () percentOff: number = 18;  
-  @Input () productName: string = "Samsung 6.5 kg Fully-Automatic Top Loading Washing Machine  A65A4002VS/TL"; 
+  @Input () percentOff: number = 0;  
+  @Input () productName: string = "Product name"; 
   @Input () src: string = "../../../assets/assets/product-3.png";
-  @Input () rating: string = "4.5";
-  @Input () currentPrice: string = "4199.00";
-  @Input () previousPrice: string = "4299.00";
+  @Input () rating: string = "5.0";
+  @Input () currentPrice: string = "0000.00";
+  @Input () previousPrice: string = "0000.00";
   @Input () currency: string = "AED";
-  @Input () time: string = "19:34:30";
+  @Input () time: string = "00:00:00";
   @Input () countType: string = "hrs";
-  @Input () wishList: boolean = true;
-
+  @Input () wishList: boolean = false;
 
   addCart(){
     alert("added to cart");
